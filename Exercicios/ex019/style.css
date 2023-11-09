@@ -17,3 +17,15 @@ h1#primeiro{
 h2{
     color: rgb(0, 140, 255);
 }
+
+h2.basico{
+    color: black;
+}
+
+h2.intermediario{
+    color: orange;
+}
+
+h2.avancado{
+    color: blueviolet;
+}
