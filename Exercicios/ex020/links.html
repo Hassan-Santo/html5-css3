@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited{
+    color: brown;
+}
+
+a:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+a:active{
+    color: chartreuse;
+}
+
+.esp{
+    background-color: rgb(139, 168, 141);
+}
+
+.esp::after{
+    content: ' [link]';
+}
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+
+    <ul>
+        <li><a href="para links/audios.html" target="_blank" rel="external">Audios para voçe</a></li>
+         <li><a href="para links/Index.html" target="_blank" rel="external" class="esp">Sites de audios</a></li>
+    </ul>
+    
+</body>
+</html>
