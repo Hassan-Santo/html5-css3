@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+
+   <style>
+   body{
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+   }
+
+   header{
+    background-image: linear-gradient(to bottom, #5f9ea0, #1c3334);
+    padding-top: 1px;
+    
+   }
+
+   h1{
+    color: #d7fff7;
+   }
+
+   h2{
+    background-image: linear-gradient(to right, #ffda95, #ffa60015);
+   }
+
+   main{
+    background-color: #d7fff7;
+    margin: 5px;
+    padding: 10px;
+    
+
+   }
+
+   article{
+    padding: 5px;
+   }
+
+   article  >aside{
+    background-image: linear-gradient(to right, #ffd07996, #ffa60000);
+    color: #8a0000;
+   }
+
+   footer{
+    background-color: blue;
+    color: rgb(0, 0, 0);
+   }
+
+   a{
+    text-decoration: none;
+    color: rgb(215, 215, 215);
+    font-size: 15px;
+   }
+
+   a:hover{
+    background-color: #436869;
+   }
+
+   a:active{
+    color: #5f9ea0;
+   }
+
+   a::after{
+    content: ' |';
+    color: #406a6c;
+   }
+
+   span{
+    color: azure;
+   }
+
+   span:hover{
+    color: aquamarine;
+   }
+
+   span::after{
+    content: ' <';
+    color: #5f9ea0;
+   }
+
+   span >ol{
+    display: none;
+    color: #ffffff;
+   }
+
+   span:hover >ol{
+    display: block;
+   }
+
+   video{
+    width: 400px;
+   }
+
+   </style>
+
+</head>
+<body>
+    
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+              <a href="#">Home</a>
+              <a href="#">Pastas</a>
+              <a href="#">Games</a>
+              <a href="#">Poops</a>
+              <span>Menu
+                <ol>
+                    <li>Gta Sandreas</li>
+                    <li>Vice City</li>
+                    <li>Liberty City</li>
+                </ol>
+              </span>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Algumas dicas do site</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dolore repellat. Architecto nobis incidunt dicta, quae corrupti blanditiis similique suscipit illum? Ea ipsum repudiandae voluptates quia nostrum eligendi non at!</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta in minus cupiditate odit labore! Officia sunt facere sapiente? Ipsa quod veniam inventore distinctio similique reiciendis molestias vitae quidem necessitatibus adipisci?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor optio dolorem eum debitis, rem ipsam, accusantium itaque iusto sed magnam, hic sapiente eligendi illum? Suscipit maxime accusamus eum animi deserunt!</p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nulla quis reprehenderit cumque facere, pariatur sed iusto assumenda dignissimos sint debitis iste vitae excepturi repudiandae quam maxime voluptates dolorum provident. <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio ratione iure odit, dolorum sed sint tempore maiores quos? Est perferendis ipsum eveniet. Harum aspernatur voluptate inventore dolor optio ipsum laborum?
+                </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam illo atque facilis iste, omnis molestiae quibusdam optio praesentium pariatur doloribus vel, mollitia tenetur, cumque unde doloremque temporibus asperiores odit minima.</p>
+
+                <picture>
+                     <source media="(max-width: 550px)" srcset="imagens/kenyewest300.jpg" type="image/jpeg">
+                     <source media="(max-width: 750px)" srcset="imagens/kenyewest500.jpg" type="image/jpeg">
+                    <img src="imagens/kenyewest700.jpg" alt="flex">
+                </picture>
+
+                <aside>
+                <p>Escrito por Hassan Santo</p>
+                </aside>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolore consectetur quaerat molestiae sapiente exercitationem deserunt? Ducimus impedit et aliquid sequi commodi? Est ea architecto voluptates repellendus facilis sit provident.</p>
+
+                <video poster="imagens/fundos300.jpg" controls>
+
+                    <source src="Midia/meu-video.mp4" type="video/mp4">
+                </video>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvendo Sites</p>
+    </footer>
+    
+</body>
+</html>
