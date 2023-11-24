@@ -107,6 +107,7 @@ main p{
     margin: 15px 0px;
     text-indent: 20px;
     line-height: 1.5em;
+    text-align: justify;
 }
 
 main strong{
